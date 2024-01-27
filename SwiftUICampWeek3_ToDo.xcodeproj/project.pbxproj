@@ -11,6 +11,9 @@
 		C35D1A3F2B5C5D9600C794E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35D1A3E2B5C5D9600C794E1 /* ContentView.swift */; };
 		C35D1A412B5C5D9900C794E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35D1A402B5C5D9900C794E1 /* Assets.xcassets */; };
 		C35D1A442B5C5D9900C794E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35D1A432B5C5D9900C794E1 /* Preview Assets.xcassets */; };
+		C3A2EEE22B653FED002B837E /* ModelsV100.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2EEE12B653FED002B837E /* ModelsV100.swift */; };
+		C3A2EEE42B6545EE002B837E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2EEE32B6545EE002B837E /* Models.swift */; };
+		C3A2EEE62B6548A9002B837E /* AddEditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2EEE52B6548A9002B837E /* AddEditTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		C35D1A3E2B5C5D9600C794E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C35D1A402B5C5D9900C794E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35D1A432B5C5D9900C794E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C35D1A4A2B5C603E00C794E1 /* SwiftUICampWeek3_ToDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUICampWeek3_ToDo.entitlements; sourceTree = "<group>"; };
+		C3A2EEDF2B653EC9002B837E /* SwiftUICampWeek3-ToDo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUICampWeek3-ToDo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C3A2EEE12B653FED002B837E /* ModelsV100.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsV100.swift; sourceTree = "<group>"; };
+		C3A2EEE32B6545EE002B837E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C3A2EEE52B6548A9002B837E /* AddEditTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,12 @@
 		C35D1A3B2B5C5D9600C794E1 /* SwiftUICampWeek3_ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				C3A2EEDF2B653EC9002B837E /* SwiftUICampWeek3-ToDo-Info.plist */,
+				C35D1A4A2B5C603E00C794E1 /* SwiftUICampWeek3_ToDo.entitlements */,
+				C3A2EEE02B653F9A002B837E /* Models */,
 				C35D1A3C2B5C5D9600C794E1 /* SwiftUICampWeek3_ToDoApp.swift */,
 				C35D1A3E2B5C5D9600C794E1 /* ContentView.swift */,
+				C3A2EEE52B6548A9002B837E /* AddEditTodoView.swift */,
 				C35D1A402B5C5D9900C794E1 /* Assets.xcassets */,
 				C35D1A422B5C5D9900C794E1 /* Preview Content */,
 			);
@@ -65,6 +77,15 @@
 				C35D1A432B5C5D9900C794E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3A2EEE02B653F9A002B837E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A2EEE12B653FED002B837E /* ModelsV100.swift */,
+				C3A2EEE32B6545EE002B837E /* Models.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A2EEE22B653FED002B837E /* ModelsV100.swift in Sources */,
 				C35D1A3F2B5C5D9600C794E1 /* ContentView.swift in Sources */,
 				C35D1A3D2B5C5D9600C794E1 /* SwiftUICampWeek3_ToDoApp.swift in Sources */,
+				C3A2EEE62B6548A9002B837E /* AddEditTodoView.swift in Sources */,
+				C3A2EEE42B6545EE002B837E /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +293,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUICampWeek3_ToDo/SwiftUICampWeek3_ToDo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICampWeek3_ToDo/Preview Content\"";
-				DEVELOPMENT_TEAM = T5H639Z82S;
+				DEVELOPMENT_TEAM = 4E5XUM99EM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUICampWeek3-ToDo-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +324,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUICampWeek3_ToDo/SwiftUICampWeek3_ToDo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICampWeek3_ToDo/Preview Content\"";
-				DEVELOPMENT_TEAM = T5H639Z82S;
+				DEVELOPMENT_TEAM = 4E5XUM99EM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUICampWeek3-ToDo-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

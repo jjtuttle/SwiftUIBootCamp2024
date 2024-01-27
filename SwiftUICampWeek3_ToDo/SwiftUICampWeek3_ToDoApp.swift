@@ -6,12 +6,27 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct SwiftUICampWeek3_ToDoApp: App {
+    
+    let container: ModelContainer
+    
+    init() {
+        do {
+            container = try ModelContainer(for: Todo.self, Task.self, migrationPlan: nil)
+        } catch {
+            fatalError("Failed to laod container!")
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
+            .modelContainer(container)
         }
     }
 }
